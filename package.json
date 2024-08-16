@@ -1,0 +1,28 @@
+{
+  "name": "my-hono-proxy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler publish",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "test": "vitest",
+    "cf-typegen": "wrangler types",
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.4.5",
+    "@cloudflare/workers-types": "^4.20240806.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "vitest": "1.5.0",
+    "webpack-cli": "^5.1.4",
+    "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.4",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2",
+    "hono": "^2.0.0"
+  }
+}
